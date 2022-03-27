@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="flex center">
+    <form class="flex justify column">
+        <h4>Select dates</h4>
+        <label for="from">From</label>
+        <input type="number" name="from" id="from" min="1">
+        <p hidden class="input-error from-error">Please fill a valid starting date</p>
+
+        <label for="to">To</label>
+        <input type="number" name="to" id="to" min="1">
+        <p hidden class="input-error to-error">Please fill a valid end date</p>
+
+        <h4>Select hours</h4>
+        <label for="clock-in">Clock in hour</label>
+        <input type="time" name="clock-in" id="clock-in">
+        <p hidden class="input-error clock-in-error">Please fill a valid clock-in time</p>
+
+
+        <label for="clock-out">Clock out hour</label>
+        <input type="time" name="clock-out" id="clock-out">
+        <p hidden class="input-error clock-out-error">Please fill a valid clock-out time</p>
+
+        <button class="fill-btn">Fill!</button>
+    </form>
+    <script src="utils.js"></script>
+    <script src="content-script.js"></script>
+    <script defer src="popup.js"></script>
+</body>
+
+</html>

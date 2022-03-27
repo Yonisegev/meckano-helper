@@ -1,0 +1,59 @@
+:root {
+    --black: #191919;
+    --red: #ef3e3a;
+    --white-txt: #eee;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 320px;
+    width: 320px;
+    background: var(--black);
+    color: var(--white-txt);
+    font-family: 'Poppins', sans-serif;
+}
+
+form h4 {
+    width: 160px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    margin: 8px 0;
+}
+
+
+form button {
+    width: 100%;
+    margin: 8px auto 0;
+    border: none;
+    padding: 3px 8px;
+    background: var(--red);
+    color: var(--white-txt);
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex.justify {
+    justify-content: center;
+}
+
+.flex.align {
+    align-items: center;
+}
+
+.flex.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.flex.column {
+    flex-direction: column;
+}
